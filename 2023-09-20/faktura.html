@@ -8,20 +8,27 @@
         table {
             width: 60%;
             border-spacing: 150;
+            margin-top: 100px;
+            margin-left: 500px;
             }
          table:nth-child(3){
             width: 40%;
-            border: 3px solid rgba(165, 142, 142, 0.623)
+            
+            }
+            .table2, th:nth-child(){
+               
+                
+                
             }
         tbody:nth-child(3) tr:nth-child(6) {
-            background-color: rgb(210, 233, 241);
+            background-color: rgb(240, 240, 241);
             text-align: right;
             }
         tbody:nth-child(3) tr:nth-child(4) {
-            background-color: rgb(210, 233, 241);
+            background-color: rgb(240, 240, 241);
             }
         tbody:nth-child(3) tr:nth-child(2) {
-            background-color: rgb(210, 233, 241);
+            background-color: rgb(240, 240, 241);
              } 
         
         thead:nth-child(2) {
@@ -33,14 +40,16 @@
             thead:nth-child(1){
                 text-align: left;
             }
-           
+            .table2{
+                margin-top: -50px;
+            }
          
            </style>
            
 </head>
 <body>
-    <p><h1>2023 Calendar</h1>www.wiki-calendar.com</p>
-<table>
+    
+<table class="table1">
     <thead style="color: rgb(110, 107, 104);">
         <tr>
             <th></h1>INVOICE</h1></th>
@@ -52,19 +61,19 @@
         <tr>
            <td>Your Company Name</td>
         
-            <td><b><u>2023-06-16</td></b></u>
+            <td style="color: rgb(110, 107, 104);;"><b><u>2023-06-16</td></b></u>
         <tr>
         <tr><td>123 Street Address</td>  
         <tr>
         <tr> <td>City, State, Zip/Post Code</td> 
-             <td><b><u>2023-06-16</td></tr></b></u>
+             <td style="color: rgb(110, 107, 104);;"><b><u>2023-06-16</td></tr></b></u>
         <tr> <td>Phone Number</td>  </tr>
         <tr><td>Email Address</td></tr>
         </tr>
 
         <tr>
-            <td><b><u>BILL TO</td></u></b>
-            <td><b><u>SHIP TO</td></u></b>
+            <td style="color: rgb(110, 107, 104);;"><b><u>BILL TO</td></u></b>
+            <td style="color: rgb(110, 107, 104);;"><b><u>SHIP TO</td></u></b>
             <tr>
             <td>Contact Name</td> 
             <td>Name / Dept</td>
@@ -76,14 +85,14 @@
             <td>Phone</td> </tr>
         </tr>
         <table> 
-<table>   
+<table class="table2">   
    <tbody>      
  
     <thead>
         <tr>
             <th>DESCRIPTION</th>
             <th width="60">QTY</th>
-            <th width=80">UNIT PRICE</th>
+            <th width="80">UNIT PRICE</th>
             <th>TOTAL</th>
         </tr>
     </thead>
@@ -128,20 +137,19 @@
             <td></td>
             <td></td>
             <td>Subtotal</td>
-            <td align="right">1,009.9</td>
+            <td style="text-align: right;">1,009.9</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
             <td>Discount</td>
-            <td align="right">0.00</td>
+            <td style="text-align: right;">0.00</td>
         </tr>
         <tr>
             <td></td>
             <td></td>
-            <td><h3>Balance</h3>
-            <h3>Due</h3></td>
-            <td bgcolor="lightblue" align="right"> <b>€ 1,009.90</b></td>
+            <td><h3>Balance  <br />Due</h3></td>
+            <td style="text-align: right;background-color: lightblue;"  > <b>€ 1,009.90</b></td>
         </tr>
         </tbody>
 </table>
