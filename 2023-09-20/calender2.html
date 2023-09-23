@@ -6,24 +6,78 @@
     <title>Calender2</title>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;500;700&display=swap');
-        h1{
-            text-align: center;
-           
-        }
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+        
         body{
             font-family: 'Roboto'; 
         }
-        p{
-            text-align:  center;
-           
+        .container{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
+        ul{
+            list-style: none;
+           margin: 0%;
+           padding: 0%;
+        }
+        h1{
+            text-align: center;
+        }
+       
+      p{
+        text-align: center;
+        margin-top: -20px;
+      }
+      .table{
+        margin-right: 1000px;
+      }
+      .table1{
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #4d4d4d;
+    border-collapse: collapse;
+      }
+      .table1 > tbody > tr > td{
+        border-bottom: 1px solid #4d4d4d;
+        border-right: 1px solid #4d4d4d;
+    }
+    .table1 table{
+        width: 100%;
+        text-align: center;
+    }
+    .table1 table thead tr:nth-child(1) td{
+        font-weight: 700;
+    }
+.table1 table thead tr:nth-child(2) td{
+    font-weight: 700;
+}
+.red{
+    color: red;
+}
+.table2{
+    width: 100%;
+}
+.space{
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    
+}
+
+.day{
+display: inline-block;
+width: 50px;
+}
+
+      
     </style>
 </head>
 <body>
+    <div class="container">
     <h1> 2023 Calendar </h1>
-       <p>www.wiki-calendar.com</p>
-    <table class="big-table" >
+       <p >www.wiki-calendar.com</p>
+    <table class="table1" >
         <tr>
             <td>
                 <table>
@@ -621,6 +675,8 @@
                         </tr>
                     </tbody>
                 </table>
+               </td>
+               <td>
                 <table>
                     <thead>
                         <tr>
@@ -680,10 +736,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
                         </tr>
                     </tbody>
                 </table>
+               </td>
+               <td>
                 <table>
                     <thead>
                         <tr>
@@ -747,6 +804,8 @@
                         </tr>
                     </tbody>
                 </table>
+               </td>
+               <td>
                 <table>
                     <thead>
                         <tr>
@@ -817,53 +876,77 @@
         </td>
    </table>
 <h1>HOLIDAYS AND OBSERVANCES</h1>
-<table>
+<table class="table2">
     <tr>
         <td>
             <ul>
-                <li>Jan 1- New Year's Day</li>
-                <li class="red">Jan 2 - New Year's Day day off</li>
-                <li class="red">Feb 14 - Valentine's Day</li>
-                <li>Jan 16 - Martin Luther King Jr. Day</li>
-                <li>Feb 20 - Presidents' Day</li>
-                <li class="red">Mar 17 - St. Patrick's Day</li>
-                <li>Apr 9 - Easter Sunday</li>
+                <li> 
+                    <span class="day red">Jan 1</span> 
+                     <span class="space">-</span> New Year's Day
+                </li>
+                <li> <span class="day">Jan 2</span> 
+                    <span class="space">-</span> New Year's Day day off</li>
+                <li> <span class="day red">Feb 14</span> 
+                    <span class="space">-</span> Valentine's Day</li>
+                <li> <span class="day">Jan 16</span> 
+                    <span class="space">-</span> Martin Luther King Jr. Day</li>
+                <li> <span class="day">Feb 20</span> 
+                    <span class="space">-</span> Presidents' Day</li>
+                <li> <span class="day red">Mar 17</span> 
+                    <span class="space">-</span> St. Patrick's Day</li>
+                <li> <span class="day red">Apr 9</span> 
+                    <span class="space">-</span> Easter Sunday</li>
             </ul>
         </td>
         <td>
             <ul>
-            <li>Jan 1- New Year's Day</li>
-            <li class="red">Jan 2 - New Year's Day day off</li>
-            <li class="red">Feb 14 - Valentine's Day</li>
-            <li>Jan 16 - Martin Luther King Jr. Day</li>
-            <li>Feb 20 - Presidents' Day</li>
-            <li class="red">Mar 17 - St. Patrick's Day</li>
-            <li>Apr 9 - Easter Sunday</li>
+            <li> <span class="day red">Jan 1</span>  
+                <span class="space">-</span> New Year's Day</li>
+                <li> <span class="day" >Jan 2 </span> 
+                    <span class="space">-</span> New Year's Day day off</li>
+                <li> <span class="day red">Feb 14 </span> 
+                    <span class="space">-</span> Valentine's Day</li>
+                <li> <span class="day">Jan 16 </span> 
+                    <span class="space">-</span> Martin Luther King Jr. Day</li>
+                <li> <span class="day">Feb 20 </span> 
+                    <span class="space">-</span> Presidents' Day</li>
+                <li> <span class="day red">Mar 17 </span> 
+                    <span class="space">-</span> St. Patrick's Day</li>
+                <li> <span class="day red"> Apr 9 </span> 
+                    <span class="space">-</span> Easter Sunday</li>
         </ul>
     </td>
         <td>
             <ul>
-                <li>Jan 1- New Year's Day</li>
-                <li class="red">Jan 2 - New Year's Day day off</li>
-                <li class="red">Feb 14 - Valentine's Day</li>
-                <li>Jan 16 - Martin Luther King Jr. Day</li>
-                <li>Feb 20 - Presidents' Day</li>
-                <li class="red">Mar 17 - St. Patrick's Day</li>
-                <li class="red">Apr 9 - Easter Sunday</li>
+                <li> <span class="day red">Jan 1</span> 
+                     <span class="space">-</span> New Year's Day</li>
+                <li> <span class="day" >Jan 2</span> 
+                    <span class="space">-</span> New Year's Day day off</li>
+                <li> <span class="day red">Feb 14</span>
+                     <span class="space">-</span> Valentine's Day</li>
+                <li> <span class="day">Jan 16</span> 
+                    <span class="space">-</span> Martin Luther King Jr. Day</li>
+                <li> <span class="day">Feb 20</span> 
+                    <span class="space">-</span> Presidents' Day</li>
+                <li> <span class="day red">Mar 17</span> 
+                    <span class="space">-</span> St. Patrick's Day</li>
+                <li> <span class="day red">pr 9</span> 
+                    <span class="space">-</span> Easter Sunday</li>
             </ul>
         </td>
         <td>
             <ul>
-                <li class="red">Jan 1- New Year's Day</li>
-                <li >Jan 2 - New Year's Day day off</li>
-                <li class="red">Feb 14 - Valentine's Day</li>
-                <li>Jan 16 - Martin Luther King Jr. Day</li>
-                <li>Feb 20 - Presidents' Day</li>
-                <li class="red">Mar 17 - St. Patrick's Day</li>
-                <li>Apr 9 - Easter Sunday</li>
+                <li> <span class="day red">Jan 1</span>  <span class="space">-</span> New Year's Day</li>
+                <li> <span class="day" >Jan 2</span> <span class="space">-</span> New Year's Day day off</li>
+                <li> <span class="day red">Feb 14</span> <span class="space">-</span> Valentine's Day</li>
+                <li> <span class="day">Jan 16</span> <span class="space">-</span> Martin Luther King Jr. Day</li>
+                <li> <span class="day">Feb 20</span> <span class="space">-</span> Presidents' Day</li>
+                <li> <span class="day red">Mar 17</span> <span class="space">-</span> St. Patrick's Day</li>
+                <li> <span class="day red">Apr 9</span> <span class="space">-</span> Easter Sunday</li>
             </ul>
         </td>
     </tr>
 </table>
+
 </body>
 </html>
