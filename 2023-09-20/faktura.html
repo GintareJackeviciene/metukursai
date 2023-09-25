@@ -13,6 +13,8 @@
             width: 2000px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 30px;
+          
         }
         .text{
             font-size:xx-large;
@@ -20,56 +22,124 @@
             font-weight: bold;
            
         }
-        .logo{
-            color: rgb(255, 255, 255);
-            border-radius: 100px;
-            background: gray;
+        #logo{
+            background-color: grey;
+            border-radius: 50px;
             width: 100px;
             height: 100px;
-            padding-left: 0px;
-         
-            
-        }
-        table {
+            font-size:x-large;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           margin-right: -20px;
+            }
+       
+            table {
             width: 60%;
-            border-spacing: 150;
             margin-top: 100px;
             margin-left: 500px;
             }
-         table:nth-child(3){
-            width: 40%;
+        .table2{
+              width: 46%;
+             padding-top: 90px;
+             padding-right: 4px;
+             font-weight: bolder;
+             color: rgb(107, 105, 105);
+          
+            }
+        .table3{
+                width: 46%;
+                margin-top: 40px;   
+             }
+
+        .table2  td:nth-child(2){
+                border-bottom: 1px solid rgb(148, 146, 146);
+                text-align: center;
+                
+         }
+ 
+         ul{
+            list-style: none;
+            margin: 0%;
+            padding: 0%;
             
-            }
-            .table2, th:nth-child(){
-               
-                
-                
-            }
-        tbody:nth-child(3) tr:nth-child(6) {
-            background-color: rgb(240, 240, 241);
-            text-align: right;
-            }
-        tbody:nth-child(3) tr:nth-child(4) {
-            background-color: rgb(240, 240, 241);
-            }
-        tbody:nth-child(3) tr:nth-child(2) {
-            background-color: rgb(240, 240, 241);
-             } 
-        
-        thead:nth-child(2) {
-            background-color: rgb(38, 56, 218);
-            }
-        thead:nth-child(2){
-                color: white;
-            }
-            thead:nth-child(1){
-                text-align: left;
-            }
-            .table2{
-                margin-top: -50px;
-            }
+         }
+         .to{
+           
+            color: grey;
+            line-height: 50px; 
          
-           </style>
+         }
+         .table3   td:nth-child(2) li:nth-child(1) {
+            border-bottom: 1px solid rgb(148, 146, 146) ;
+         }
+         .table3   td:nth-child(1) li:nth-child(1) {
+            border-bottom: 1px solid rgb(148, 146, 146) ;
+         }
+         
+
+        .table4  thead:nth-child(2) {
+            background-color: rgb(49, 65, 207);
+        color: white;
+         }
+        
+        
+        .table2{
+                margin-top: -60px;
+            }
+        .table4{
+                width: 46%;
+                border-collapse: collapse;
+                margin-top: 30px;
+              }
+        .table4 tr td {
+          border: 1px solid black;
+         }
+       
+       .table4 tr:nth-child(2){
+            background-color: rgb(240, 243, 242);
+           
+        }
+        .table4 tr:nth-child(4) {
+            background-color: rgb(240, 243, 242);
+            
+        }
+        .table4 tr:nth-child(6) {
+            background-color: rgb(240, 243, 242);
+          
+            
+        }   
+        .table5{
+            margin-left: 990px;
+            margin-top: 0px;
+            padding-left: 90px;
+          padding-right: 600px;
+            width: 50%;
+        }  
+        .table5 td:nth-child(2){
+            padding-left: 210px;
+        
+           
+         
+        }
+        .table5 td:nth-child(2){
+            border-bottom: 1px solid rgb(148, 146, 146);
+            
+        }
+        
+        .table5  tr:nth-child(4) td:nth-child(2){
+            border-bottom: 1px solid black;
+            
+        }
+        .Due{
+            padding-left: 30px;
+           
+        }
+      
+    </style>
            
 </head>
 <body>
@@ -79,50 +149,64 @@
     <thead >
         <tr>
             <td class="text">INVOICE</td>
-            <td ><div class="logo">LOGO</div></td>
-            
-            <tr>
+            <td><div id="logo">LOGO </div></td>
+        <tr>
     </thead> 
-    <tbody>
+    <table class="table2">
         <tr>
            <td>Your Company Name</td>
-        
-            <td style="color: rgb(110, 107, 104);;"><b><u>2023-06-16</td></b></u>
-        <tr>
-        <tr><td>123 Street Address</td>  
-        <tr>
-        <tr> <td>City, State, Zip/Post Code</td> 
-             <td style="color: rgb(110, 107, 104);;"><b><u>2023-06-16</td></tr></b></u>
-        <tr> <td>Phone Number</td>  </tr>
-        <tr><td>Email Address</td></tr>
+           <td>2023-06-16 </td>
         </tr>
+        <tr>
+            <td>123 Street Address</td>  
+        <tr>
+        <tr>
+             <td>City, State, Zip/Post Code</td> 
+             <td>2023-06-16</td>
+        </tr>
+        <tr> 
+            <td>Phone Number</td>  
+        </tr>
+        <tr>
+            <td>Email Address</td>
+        </tr>
+</table>
+  <table class="table3">
 
         <tr>
-            <td style="color: rgb(110, 107, 104);;"><b><u>BILL TO</td></u></b>
-            <td style="color: rgb(110, 107, 104);;"><b><u>SHIP TO</td></u></b>
-            <tr>
-            <td>Contact Name</td> 
-            <td>Name / Dept</td>
-            <tr> <td>Client Company Name</td> 
-            <td>Client Company Name</td></tr>
-            <tr> <td>Address</td> 
-            <td>Address</td></tr>
-            <tr> <td>Phone, Email</td> 
-            <td>Phone</td> </tr>
+            <td>
+                <ul>
+                    <li> <span class="to" > <b>BILL TO </b></span> </li>
+                    <li> Contact Name</li>
+                    <li> Client Company Name</li>
+                    <li> Address</li>   
+                    <li> Phone, Email</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li> <span class="to" > <b>SHIP TO </b></span> </li>
+                    <li> Name/Dept</li>
+                    <li>  Client Company Name</li>
+                    <li>Address</li> 
+                    <li>Phone</li>  
+                </ul>
+            </td>
         </tr>
-        <table> 
-<table class="table2">   
+        
+    </table> 
+<table class="table4">   
    <tbody>      
- 
-    <thead>
+<thead >
         <tr>
             <th>DESCRIPTION</th>
             <th width="60">QTY</th>
-            <th width="80">UNIT PRICE</th>
+            <th width="90" >UNIT PRICE</th>
             <th>TOTAL</th>
         </tr>
     </thead>
-    <tbody>
+</tbody>
+<tbody>
         <tr>
             <td>Monitorius</td>
             <td>10</td>
@@ -157,26 +241,26 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>0.00</td>
-        </tr>
+            <td style="text-align: left;">0.00</td>
+           </tr>
+        <table class="table5">
+            <tbody>
         <tr>
-            <td></td>
-            <td></td>
             <td>Subtotal</td>
             <td style="text-align: right;">1,009.9</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
             <td>Discount</td>
             <td style="text-align: right;">0.00</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td><h3>Balance  <br />Due</h3></td>
-            <td style="text-align: right;background-color: lightblue;"  > <b>€ 1,009.90</b></td>
+            <td><h3>Balance  <br> <span class="Due">Due</span></h3> </td>
+            <td style="text-align: right;background-color: lightblue;" > <b>€ 1,009.90</b></td>
+      
         </tr>
+        
+        </tbody>
+    </table>
         </tbody>
 </table>
 </div>
